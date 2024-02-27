@@ -55,10 +55,4 @@ const getMoviesId = (req, res) => {
 
 app.get ("/api/movies/:id", getMoviesId);
 
-app
-  .listen(port, () => {
-    console.info(`Server is listening on port ${port}`);
-  })
-  .on("error", (err) => {
-    console.error("Error:", err.message);
-  });
+module.exports = app;
